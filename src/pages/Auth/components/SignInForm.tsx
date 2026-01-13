@@ -10,6 +10,7 @@ import {
   FormItem,
   FormLabel,
 } from "@/components/ui/form";
+import { useNavigate } from "react-router-dom";
 
 type SignInFormValues = {
   email: string;
@@ -18,6 +19,7 @@ type SignInFormValues = {
 };
 
 export const SignInForm: React.FC = () => {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
 
   const form = useForm<SignInFormValues>({
@@ -30,6 +32,7 @@ export const SignInForm: React.FC = () => {
 
   const onSubmit = (data: SignInFormValues) => {
     console.log("Sign in:", data);
+    navigate("/dashboard");
   };
 
   return (

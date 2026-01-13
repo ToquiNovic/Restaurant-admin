@@ -1,2 +1,3 @@
 export * from "./Error";
-export * from "./SignIn";
+export * from "./Auth";
+export * from "./Dashboard";
