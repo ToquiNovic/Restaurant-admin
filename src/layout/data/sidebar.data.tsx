@@ -8,12 +8,12 @@ export const mainNavItems: NavItem[] = [
   {
     name: "Dashboard",
     icon: <LayoutDashboard className={iconClass} />,
-    path: "/",
+    path: "/dashboard",
   },
   {
     name: "Usuarios",
     icon: <Users className={iconClass} />,
-    path: "/usuarios",
+    path: "/users",
   },
   {
     name: "Roles",

@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { SignInPage, NotFound, DashboardPage } from "@/pages";
+import { SignInPage, NotFound, DashboardPage, UsersPage } from "@/pages";
 import { AppLayout } from "@/layout";
 
 export const AppRoutes = () => {
@@ -11,6 +11,8 @@ export const AppRoutes = () => {
       {/* Rutas de páginas */}
       <Route element={<AppLayout />}>
         <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/users" element={<UsersPage />} />
+        <Route path="/roles" element={<UsersPage />} />
       </Route>
 
       {/* Rutas de estado */}
